@@ -16,10 +16,34 @@
   height: 40vw;
   border-top: 7px solid #9356DC;
   border-radius: 50%;
+  animation-name: loader_circle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  transform-origin: center;
 }
 .loader__circle--secondary {
   border-top: none;
   border-bottom: 7px solid #99E2D0;
+}
+
+@keyframes loader_circle {
+  0% {
+    transform: translate(-50%, -50%) rotate(0turn);
+  }
+  75% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%) rotate(4turn);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
