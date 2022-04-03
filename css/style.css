@@ -1,10 +1,25 @@
-.loader {
-  z-index: 10;
+.loader__circle, .loader {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.671);
+}
+
+.loader {
+  z-index: 10;
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+}
+.loader__circle {
+  width: 40vw;
+  height: 40vw;
+  border-top: 7px solid #9356DC;
+  border-radius: 50%;
+}
+.loader__circle--secondary {
+  border-top: none;
+  border-bottom: 7px solid #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */
