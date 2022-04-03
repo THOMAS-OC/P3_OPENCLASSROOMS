@@ -1,4 +1,4 @@
-.loader__circle, .loader {
+.loader__circle, .loader__img, .loader {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11,17 +11,21 @@
   width: 100vw;
   height: 100vh;
 }
+.loader__img {
+  width: 40vw;
+  height: 40vw;
+  background-image: url("../../images/assiette.png");
+  background-position: center;
+  background-size: contain;
+  animation: loader_circle 3s linear both;
+  filter: drop-shadow(0 0 0.75rem #FF79DA);
+}
 .loader__circle {
   width: 40vw;
   height: 40vw;
   border-top: 7px solid #9356DC;
   border-radius: 50%;
-  animation-name: loader_circle;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
-  animation-timing-function: linear;
-  transform-origin: center;
+  animation: loader_circle 3s linear both;
 }
 .loader__circle--secondary {
   border-top: none;
