@@ -4,11 +4,10 @@
 .loader{
     z-index: 10;
     @extend %center_absolute;
-    // background-color: rgba(255, 255, 255, 0.671);
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.671);
     width: 100vw;
     height: 100vh;
-
+    animation: loader 3s linear both;
     &__img{
         @extend %center_absolute;
         width: 40vw;
@@ -36,7 +35,7 @@
 
 }
 
-// Animation
+// Animation circles
 
 @keyframes loader_circle {
 
@@ -59,4 +58,16 @@
         transform: translate(-50%, -50%) rotate(4turn);
     }
 
+}
+
+// animation global loader
+@keyframes loader {
+    90%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
 }

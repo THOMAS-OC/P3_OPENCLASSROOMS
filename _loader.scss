@@ -1,0 +1,101 @@
+// Création du loader
+.loader{
+    @extend %center_absolute;
+    background-color: rgba(255, 255, 255, 0.671);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    animation: loader 3s linear both;
+    &__img{
+        @extend %center_absolute;
+        width: map-get($sizeLoader, sizeLoaderDesktop);
+        height: map-get($sizeLoader, sizeLoaderDesktop);
+        border-radius: 50%;
+        background: url("../pictures/assiette.png") center;
+        background-size: contain;
+        animation: loader_circle 3s linear both;
+        filter: drop-shadow(0 0 0.75rem $secondary);
+    }
+
+    &__circle{
+        @extend %center_absolute;
+        width: map-get($sizeLoader, sizeLoaderDesktop);
+        height: map-get($sizeLoader, sizeLoaderDesktop);
+        border-radius: 50%;
+        border-color: transparent;
+        border-top: 0.5vw solid $primary;
+        animation: loader_circle 3s linear 1 both;
+
+        &--secondary{
+            border-bottom: 0.5vw solid $tertiary;
+            border-top: transparent;
+            width: 9vw;
+            height: 9vw;
+            animation: loader_circle_reverse 3s linear both;
+        }
+    }
+
+}
+
+@keyframes loader {
+    90%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes loader_circle {
+    0%{
+        transform: translate(-50%, -50%) rotate(0turn);
+    }
+
+    75%{
+        opacity: 1;
+    }
+    
+    90%{
+        opacity: 0;
+        visibility : visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-50%, -50%) rotate(4turn);
+    }
+}
+
+@keyframes loader_circle_reverse {
+    0%{
+        transform: translate(-50%, -50%) rotate(0turn);
+    }
+
+    75%{
+        opacity: 1;
+    }
+    
+    90%{
+        opacity: 0;
+        visibility : visible;
+    }
+    100%{
+        visibility: hidden;
+        transform: translate(-50%, -50%) rotate(-4turn);
+    }
+}
+
+// RESPONSIVE LOADER
+
+@media (max-width: 700px) { 
+        .loader div{
+            width: map-get($sizeLoader, sizeLoaderSmartphone);
+            height: map-get($sizeLoader, sizeLoaderSmartphone);
+            &:nth-child(3){
+                width: 25vw;
+                height: 25vw;
+            }
+        }
+}

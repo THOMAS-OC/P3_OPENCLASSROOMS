@@ -1,0 +1,30 @@
+// MISE EN PAGE DU FOOTER
+footer{
+    background-color: $color-footer;
+    
+    ul{
+        padding: 30px;
+        width: 1200px;
+        margin: 0 auto;
+        font-family: $font-text;
+    }
+    li{
+        color: whitesmoke;
+        margin: 15px 0px 0px 10px;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    li:nth-child(1){
+        margin-left: 0;
+        font-family: $font-logo;
+        font-size: 23px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            color: $color-primary;
+        }
+    }
+}
