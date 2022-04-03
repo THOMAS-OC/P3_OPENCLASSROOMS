@@ -1,4 +1,21 @@
 @import "utils/variables";
+@import "utils/mixins";
 @import "utils/extensions";
 
+// IMPORTATION DES FONDATIONS DU SITE
+@import "base/reset";
+@import "base/typo";
+@import "base/base";
+
+// IMPORTATION DES BLOCS FIXES
+@import "layouts/header";
+@import "layouts/footer";
+
+// IMPORTATION DES COMPOSANTS INDEPENDANTS
 @import "components/loader";
+@import "components/button";
+@import "components/hearth";
+
+// IMPORT DU CSS POUR LA PAGE RESTAURANT
+@import "pages/restaurant";
+@import "pages/home";
