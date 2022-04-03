@@ -9,6 +9,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+  user-select: none;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,6 +65,42 @@ table {
 
 a {
   color: black;
+}
+
+header {
+  height: 80px;
+  width: 100vw;
+  background-color: white;
+  box-shadow: 0px 5px 10px black;
+  position: relative;
+}
+header .logo {
+  width: 200px;
+  height: 100%;
+  margin: 0px auto;
+  background: url("../../images/logo/ohmyfood.png") center no-repeat;
+  background-size: contain;
+  transition-duration: 0.5s;
+}
+header:hover .logo {
+  transform: scale(1.2) rotate(2deg);
+}
+header i {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+header i:hover {
+  color: #9356DC;
+}
+
+address {
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+  background-color: #EAEAEA;
 }
 
 .footer {
