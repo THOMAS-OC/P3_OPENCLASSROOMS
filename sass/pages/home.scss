@@ -1,0 +1,16 @@
+.presenting{
+    text-align: center;
+    font-family: $font-text;
+    height: 200px;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $color-background;
+    align-items: center;
+    &__title{
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+}
