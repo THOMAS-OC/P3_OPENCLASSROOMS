@@ -143,7 +143,7 @@ address {
 .loader__img {
   width: 40vw;
   height: 40vw;
-  background-image: url("../../images/assiette.png");
+  background-image: url("../images/assiette.png");
   background-position: center;
   background-size: contain;
   animation: loader_circle 3s linear both;
