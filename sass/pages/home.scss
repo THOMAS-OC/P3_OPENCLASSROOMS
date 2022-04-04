@@ -1,3 +1,5 @@
+// Mobile-first Interface
+
 .presenting{
     text-align: center;
     font-family: $font-text;
@@ -96,6 +98,7 @@ h2:nth-child(1){
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 
     &__item{
         height: 250px;
@@ -127,6 +130,7 @@ h2:nth-child(1){
         color: darken($color-tertiary, 30%);
         border-radius: 2px;
     }
+
     &__item__foot{
         position: absolute;
         width: 100%;
@@ -144,4 +148,86 @@ h2:nth-child(1){
             font-weight: bold;
         }
     }
+
+}
+
+// tablette interface
+
+@media ( min-width : 768px ) and (max-width : 1200px) {
+    // Restaurant
+
+    .restaurant{
+        // Hover effect
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 800px;
+
+        &__item{
+            width: 45vw;
+            height: 30vw;
+        }
+
+    }
+
+}
+
+
+// Big Desktop interface
+
+@media ( min-width : 1800px ) {
+    // Restaurant
+
+    .restaurant{
+        // Hover effect
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 700px;
+        padding: 50px 0px;
+        &__item{
+            filter: brightness(0.7);
+            transition-duration: 0.2s;
+            width: 20vw;
+            height: 15vw;
+            &:hover{
+                filter: brightness(1);
+            }
+        }
+
+        &__item:nth-child(odd){
+            align-self: flex-start;
+        }
+
+        &__item:nth-child(even){
+            align-self: flex-end;
+        }
+
+    }
+
+}
+
+// Desktop interface
+
+@media ( min-width : 1200px ) {
+    // Restaurant
+
+    .restaurant{
+        // Hover effect
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 700px;
+        padding: 50px 0px;
+        &__item{
+            filter: brightness(0.7);
+            transition-duration: 0.2s;
+            width: 20vw;
+            height: 15vw;
+            &:hover{
+                filter: brightness(1);
+            }
+        }
+    }
+
 }
