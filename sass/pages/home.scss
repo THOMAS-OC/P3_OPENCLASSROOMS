@@ -25,6 +25,10 @@ h2{
     font-size: 30px;
 }
 
+h2:nth-child(1){
+    background-color: red;
+}
+
 .order{
     font-family: $font-text;
     height: 300px;
@@ -83,6 +87,7 @@ h2{
 
 // Restaurants
 .restaurant{
+    font-family: $font-text;
     height: auto;
     background-color: $color-background;
     width: 100vw;
@@ -116,6 +121,15 @@ h2{
         background-color: rgba(255, 255, 255, 0.80);
         bottom: 0;
         left: 0;
-        height: 20%;
+        height: 30%;
+        line-height: 20px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 10px;
+
+        span{
+            font-weight: bold;
+        }
     }
 }
