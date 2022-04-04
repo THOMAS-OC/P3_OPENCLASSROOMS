@@ -19,6 +19,7 @@
 */
 * {
   user-select: none;
+  box-sizing: border-box;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -211,17 +212,56 @@ address {
 .presenting {
   text-align: center;
   font-family: Roboto;
-  height: 200px;
-  padding: 50px 50px;
+  height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #F6F6F6;
   align-items: center;
 }
 .presenting__title {
   font-weight: bold;
   font-size: 25px;
+}
+
+.order {
+  font-family: Roboto;
+  height: 300px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.order__step {
+  position: relative;
+  height: 70px;
+  border-radius: 20px;
+  width: 80vw;
+  background-color: #F6F6F6;
+}
+.order__step:hover {
+  background-color: #e4d5f6;
+}
+.order__step:hover i {
+  color: #9356DC;
+}
+.order__step__text {
+  line-height: 70px;
+  text-align: center;
+}
+.order__step__number {
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  background-color: #9356DC;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
 }
 
 body {

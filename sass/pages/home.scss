@@ -1,16 +1,60 @@
+
+
 .presenting{
     text-align: center;
     font-family: $font-text;
-    height: 200px;
-    padding: 50px 50px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: $color-background;
     align-items: center;
     &__title{
         font-weight: bold;
         font-size: 25px;
+    }
+}
+
+.order{
+    font-family: $font-text;
+    height: 300px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__step{
+        position: relative;
+        height: 70px;
+        border-radius: 20px;
+        width: 80vw;
+        background-color: $color-background;
+        &:hover{
+            background-color: lighten($color-primary, 30%);
+        }
+        &:hover i{
+            color: $color-primary;
+        }
+    }
+
+    &__step__text{
+        line-height: 70px;
+        text-align: center;
+    }
+
+    &__step__number{
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        background-color: $color-primary;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        left: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
     }
 
 }
