@@ -219,6 +219,10 @@ button, .presenting__button {
   background: #9356dc;
   background: linear-gradient(4deg, #9356DC 0%, #FF79DA 100%);
 }
+button:hover, .presenting__button:hover {
+  filter: brightness(1.2);
+}
+
 .coeur {
   cursor: pointer;
   mask-image: url("../images/heart.svg");

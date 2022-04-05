@@ -13,6 +13,7 @@ button, .presenting__button{
     @extend %shadow_button;
     &:hover{
         @extend %shadow_button_hover;
+        filter: brightness(1.2);
     }
         
 }
