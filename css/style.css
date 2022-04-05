@@ -220,6 +220,7 @@ address {
   background: linear-gradient(4deg, #9356DC 0%, #FF79DA 100%);
 }
 .coeur {
+  cursor: pointer;
   mask-image: url("../images/heart.svg");
   background-image: url("../images/heart-regular.svg");
   background: #9356dc;
@@ -229,6 +230,7 @@ address {
 }
 
 .coeur_front {
+  cursor: pointer;
   mask-image: url("../images/heart.svg");
   background-image: url("../images/heart-regular.svg");
   z-index: 5;
@@ -335,7 +337,6 @@ h2:nth-child(1) {
 }
 .restaurant__item {
   height: 250px;
-  background-color: red;
   border-radius: 20px;
   width: 350px;
   position: relative;
