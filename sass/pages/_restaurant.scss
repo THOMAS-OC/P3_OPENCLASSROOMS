@@ -1,0 +1,29 @@
+// picture of restaurant
+.picture_restaurant{
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+}
+
+h1{
+    font-family: $font-logo;
+    font-size: 50px;
+}
+
+main{
+    @extend %shadow_button;
+    background-color: #F6F6F6;
+    width: 80vw;
+    height: auto;
+    min-height: 1000px;
+    transform: translateY(-50px);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.coeur, .coeur_front{
+    top: 50px;
+    right: 50px;
+    transform: none;
+}

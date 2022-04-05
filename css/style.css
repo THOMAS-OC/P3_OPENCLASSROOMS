@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%);
 }
 
-.restaurant__item, .order__step, .presenting__button {
+.restaurant__item, .order__step, main, .presenting__button {
   box-shadow: 0px 3px 14px 5px rgba(0, 0, 0, 0.26);
 }
 
@@ -242,6 +242,34 @@ address {
   background: #9356dc;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   opacity: 1;
+}
+
+.picture_restaurant {
+  width: 100vw;
+  height: 400px;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: Shrikhand;
+  font-size: 50px;
+}
+
+main {
+  background-color: #F6F6F6;
+  width: 80vw;
+  height: auto;
+  min-height: 1000px;
+  transform: translateY(-50px);
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.coeur, .coeur_front {
+  top: 50px;
+  right: 50px;
+  transform: none;
 }
 
 .presenting {
