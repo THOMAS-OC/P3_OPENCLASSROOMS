@@ -13,6 +13,16 @@
   box-shadow: 0px 3px 14px 5px rgba(0, 0, 0, 0.414);
 }
 
+.coeur_front, .coeur {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  transition-duration: 0.7s;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -209,6 +219,29 @@ address {
   background: #9356dc;
   background: linear-gradient(4deg, #9356DC 0%, #FF79DA 100%);
 }
+.coeur {
+  mask-image: url("../images/heart.svg");
+  background-image: url("../images/heart-regular.svg");
+  background: #9356dc;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  opacity: 0;
+  z-index: 4;
+}
+
+.coeur_front {
+  mask-image: url("../images/heart.svg");
+  background-image: url("../images/heart-regular.svg");
+  z-index: 5;
+}
+.coeur_front:hover {
+  opacity: 0;
+}
+.coeur_front:hover + .coeur {
+  background: #9356dc;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  opacity: 1;
+}
+
 .presenting {
   text-align: center;
   font-family: Roboto;
