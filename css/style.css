@@ -5,11 +5,11 @@
   transform: translate(-50%, -50%);
 }
 
-.restaurant__item, .order__step, main, .presenting__button {
+.restaurant__item, .order__step, main, button, .presenting__button {
   box-shadow: 0px 3px 14px 5px rgba(0, 0, 0, 0.26);
 }
 
-.presenting__button:hover {
+button:hover, .presenting__button:hover {
   box-shadow: 0px 3px 14px 5px rgba(0, 0, 0, 0.414);
 }
 
@@ -206,7 +206,7 @@ address {
     visibility: hidden;
   }
 }
-.presenting__button {
+button, .presenting__button {
   transition-duration: 0.2s;
   width: 250px;
   height: 50px;
@@ -265,11 +265,27 @@ main {
   margin: 0 auto;
   padding: 50px;
 }
+main h2 {
+  padding-left: 0;
+  font-weight: 200;
+}
+main h2::after {
+  content: "";
+  display: block;
+  background-color: #99E2D0;
+  height: 3px;
+  width: 10%;
+}
 
 .coeur, .coeur_front {
   top: 50px;
   right: 50px;
   transform: none;
+}
+
+button {
+  display: block;
+  margin: auto;
 }
 
 .presenting {

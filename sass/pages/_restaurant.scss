@@ -20,10 +20,30 @@ main{
     border-radius: 20px;
     margin: 0 auto;
     padding: 50px;
+    h2{
+        padding-left: 0;
+        font-weight: 200;
+        &::after{
+            content: "";
+            display: block;
+            background-color: $color-tertiary;
+            height: 3px;
+            width: 10%;
+        }
+    }
+    
 }
+
+// layout heart
 
 .coeur, .coeur_front{
     top: 50px;
     right: 50px;
     transform: none;
+}
+
+// Layout button
+button{
+    display: block;
+    margin: auto;
 }
