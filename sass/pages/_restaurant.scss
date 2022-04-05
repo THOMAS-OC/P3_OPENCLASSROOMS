@@ -17,6 +17,10 @@ i.fa-solid{
     font-size: 20px;
 }
 
+span{
+    font-weight: bold
+}
+
 main{
     @extend %shadow_button;
     background-color: #F6F6F6;
@@ -54,10 +58,10 @@ main{
             background-color: white;
             width: 100%;
             border-radius: 12px;
-            height: 25%;
+            height: 27%;
             position: relative;
             cursor: pointer;
-
+            padding: 10px;
         }
         &__item__checked{
             border-top-right-radius: 12px;
@@ -72,12 +76,25 @@ main{
             transition-duration: 0.5s;
             @extend %center_flex;
         }
+        &__item__price{
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            font-weight: bold;
+            width: 40px;
+            transform: translateY(-10%);
+            transition-duration: 0.5s;
+        }
     }
 }
 
 //Animation
 .menu__item:hover .menu__item__checked{
     transform: translateX(0%);
+}
+
+.menu__item:hover .menu__item__price{
+    transform: translateX(-100%);
 }
 
 .menu__item:hover i{
