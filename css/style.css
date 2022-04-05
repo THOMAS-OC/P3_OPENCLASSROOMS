@@ -356,6 +356,24 @@ h2:nth-child(1) {
     height: 30vw;
   }
 }
+@media (min-width: 1200px) {
+  .restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 700px;
+    padding: 50px 0px;
+  }
+  .restaurant__item {
+    filter: brightness(0.7);
+    transition-duration: 0.2s;
+    width: 20vw;
+    height: 15vw;
+  }
+  .restaurant__item:hover {
+    filter: brightness(1);
+  }
+}
 @media (min-width: 1800px) {
   .restaurant {
     flex-direction: row;
@@ -378,24 +396,6 @@ h2:nth-child(1) {
   }
   .restaurant__item:nth-child(even) {
     align-self: flex-end;
-  }
-}
-@media (min-width: 1200px) {
-  .restaurant {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 700px;
-    padding: 50px 0px;
-  }
-  .restaurant__item {
-    filter: brightness(0.7);
-    transition-duration: 0.2s;
-    width: 20vw;
-    height: 15vw;
-  }
-  .restaurant__item:hover {
-    filter: brightness(1);
   }
 }
 body {

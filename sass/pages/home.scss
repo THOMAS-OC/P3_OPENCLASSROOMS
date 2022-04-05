@@ -39,7 +39,6 @@ h2:nth-child(1){
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
 
     i{
         line-height: 70px;
@@ -172,12 +171,41 @@ h2:nth-child(1){
 
 }
 
+// Desktop interface
+
+@media ( min-width : 1200px ) {
+    // Restaurant
+
+    .restaurant{
+        // Hover effect
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 700px;
+        padding: 50px 0px;
+        &__item{
+            filter: brightness(0.7);
+            transition-duration: 0.2s;
+            width: 20vw;
+            height: 15vw;
+            &:hover{
+                filter: brightness(1);
+            }
+        }
+    }
+}
+
 
 // Big Desktop interface
 
 @media ( min-width : 1800px ) {
-    // Restaurant
 
+    // Part order
+    .order{
+
+    }
+
+    // Restaurant
     .restaurant{
         // Hover effect
         flex-direction: row;
@@ -207,27 +235,3 @@ h2:nth-child(1){
 
 }
 
-// Desktop interface
-
-@media ( min-width : 1200px ) {
-    // Restaurant
-
-    .restaurant{
-        // Hover effect
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: 700px;
-        padding: 50px 0px;
-        &__item{
-            filter: brightness(0.7);
-            transition-duration: 0.2s;
-            width: 20vw;
-            height: 15vw;
-            &:hover{
-                filter: brightness(1);
-            }
-        }
-    }
-
-}
