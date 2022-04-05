@@ -5,6 +5,12 @@
     transform: translate(-50%, -50%);
 };
 
+%center_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 %shadow_button{
     box-shadow: 0px 3px 14px 5px rgba(0,0,0,0.26);
 }
