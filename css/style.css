@@ -92,6 +92,10 @@ a {
   color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   height: 80px;
   width: 100vw;
@@ -212,6 +216,7 @@ address {
   }
 }
 button, .presenting__button {
+  text-decoration: none;
   transition-duration: 0.2s;
   width: 250px;
   height: 50px;
@@ -226,6 +231,10 @@ button, .presenting__button {
 }
 button:hover, .presenting__button:hover {
   filter: brightness(1.2);
+}
+
+.presenting__button {
+  line-height: 50px;
 }
 
 .coeur {
@@ -338,7 +347,6 @@ main .menu__item__checked {
 }
 
 button.command__button {
-  width: 80%;
   display: block;
   margin: 50px auto 20px auto;
 }
@@ -350,6 +358,7 @@ button.command__button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #F6F6F6;
   align-items: center;
 }
 .presenting__title {
@@ -375,6 +384,9 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.order p {
+  font-weight: bold;
 }
 .order i {
   line-height: 70px;

@@ -1,4 +1,5 @@
 button, .presenting__button{
+    text-decoration: none;
     transition-duration: 0.2s;
     width: 250px;
     height: 50px;
@@ -14,6 +15,9 @@ button, .presenting__button{
     &:hover{
         @extend %shadow_button_hover;
         filter: brightness(1.2);
-    }
-        
+    }   
+}
+
+.presenting__button{
+    line-height: 50px;
 }
