@@ -5,7 +5,7 @@
   transform: translate(-50%, -50%);
 }
 
-.presenting__button {
+.restaurant__item, .order__step, .presenting__button {
   box-shadow: 0px 3px 14px 5px rgba(0, 0, 0, 0.26);
 }
 
@@ -295,6 +295,7 @@ h2:nth-child(1) {
   border-radius: 20px;
   width: 80vw;
   background-color: #F6F6F6;
+  align-items: center;
 }
 .order__step:hover {
   background-color: #e4d5f6;
@@ -303,7 +304,6 @@ h2:nth-child(1) {
   color: #9356DC;
 }
 .order__step__text {
-  line-height: 70px;
   text-align: left;
   width: 70%;
 }
@@ -390,6 +390,16 @@ h2:nth-child(1) {
   }
 }
 @media (min-width: 1200px) {
+  .order {
+    flex-direction: row;
+  }
+  .order__step {
+    width: 20vw;
+  }
+  .order__step__number {
+    top: 0;
+  }
+
   .restaurant {
     flex-direction: row;
     flex-wrap: wrap;

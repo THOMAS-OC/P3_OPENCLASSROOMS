@@ -49,6 +49,7 @@ h2:nth-child(1){
     }
 
     &__step{
+        @extend %shadow_button;
         display: flex;
         justify-content: space-between;
         position: relative;
@@ -56,6 +57,7 @@ h2:nth-child(1){
         border-radius: 20px;
         width: 80vw;
         background-color: $color-background;
+        align-items: center;
         &:hover{
             background-color: lighten($color-primary, 30%);
         }
@@ -65,7 +67,6 @@ h2:nth-child(1){
     }
 
     &__step__text{
-        line-height: 70px;
         text-align: left;
         width: 70%;
     }
@@ -106,6 +107,7 @@ h2:nth-child(1){
         width: 350px;
         position: relative;
         overflow: hidden;
+        @extend %shadow_button;
     }
 
     &__item__img{
@@ -174,8 +176,20 @@ h2:nth-child(1){
 // Desktop interface
 
 @media ( min-width : 1200px ) {
-    // Restaurant
 
+    // Part order
+    .order{
+        flex-direction: row;
+        &__step{
+            width: 20vw;
+
+        }
+        &__step__number{
+            top: 0;
+        }
+    }
+
+    // Restaurant
     .restaurant{
         // Hover effect
         flex-direction: row;
@@ -200,10 +214,7 @@ h2:nth-child(1){
 
 @media ( min-width : 1800px ) {
 
-    // Part order
-    .order{
 
-    }
 
     // Restaurant
     .restaurant{
