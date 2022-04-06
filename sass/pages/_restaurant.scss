@@ -1,3 +1,5 @@
+// ******** Mobile-first Layout ********
+
 // picture of restaurant
 .picture_restaurant{
     width: 100vw;
@@ -21,6 +23,8 @@ span{
     font-weight: bold
 }
 
+
+
 main{
     @extend %shadow_button;
     background-color: #F6F6F6;
@@ -32,10 +36,10 @@ main{
     margin: 0 auto;
     padding: 30px;
     h2{
-        margin-top: 30px;
         padding-left: 0;
         font-weight: 200;
-        margin-bottom: 30px;
+        margin-left: 0;
+        animation: none;
         &::after{
             content: "";
             display: block;
@@ -47,22 +51,43 @@ main{
     }
 
     .menu{
+        margin-top: 30px;
         width: 100%;
-        height: 200px;
+        height: 300px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+
         &__item{
             @extend %shadow_button;
             overflow: hidden;
             background-color: white;
             width: 100%;
             border-radius: 12px;
-            height: 27%;
+            height: 60px;
             position: relative;
             cursor: pointer;
             padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            animation-duration: 0.5s;
+            animation-name: animated_dish;
+            animation-fill-mode: both;
         }
+
+        &__item--entree{
+            animation-delay: 0.2s;
+        }
+
+        &__item--dish{
+            animation-delay: 0.4s;
+        }
+
+        &__item--dessert{
+            animation-delay: 0.6s;
+        }
+
         &__item__checked{
             border-top-right-radius: 12px;
             border-bottom-right-radius: 12px;
@@ -84,6 +109,11 @@ main{
             width: 40px;
             transform: translateY(-10%);
             transition-duration: 0.5s;
+        }
+        &__item__dish{
+            height: 100%;
+            line-height: 20px;
+
         }
     }
 }
@@ -114,3 +144,50 @@ button.command__button{
     display: block;
     margin: 50px auto 20px auto;
 }
+
+// ******** RESPONSIVE tablette interface ********
+
+@media ( min-width : 768px ) and (max-width : 1200px) {
+
+}
+
+// ******** RESPONSIVE Desktop interface ******** 
+
+@media ( min-width : 1200px ) {
+
+    h1{
+        font-family: $font-logo;
+        font-size: 25px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+
+    main{
+        min-height: 300px;
+        height: 600px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+    }
+
+    section.menu{
+        height: 400px;
+        width: 25%;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+
+    button.command__button{
+        display: block;
+        margin: 50px auto 20px auto;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 20px;
+    }
+
+}
+
