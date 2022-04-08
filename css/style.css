@@ -478,6 +478,7 @@ button.command__button {
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
+  position: relative;
   height: 450px;
   background-color: white;
   padding: 0px 0 50px 0;
@@ -534,6 +535,7 @@ button.command__button {
 }
 
 .restaurant {
+  position: relative;
   overflow: hidden;
   height: auto;
   background-color: #F6F6F6;
@@ -615,14 +617,16 @@ button.command__button {
 @media (min-width: 1200px) {
   .order {
     flex-direction: row;
+    padding: 5vw;
+    width: 100vw;
   }
   .order__step {
     width: 350px;
   }
-  .order__step__number {
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 70%);
+  .order__title {
+    position: absolute;
+    top: 2.5vw;
+    left: 5vw;
   }
 
   .restaurant {
@@ -631,6 +635,11 @@ button.command__button {
     width: 100vw;
     height: 700px;
     padding: 50px 0px;
+  }
+  .restaurant__title {
+    position: absolute;
+    top: 2.5vw;
+    left: 5vw;
   }
   .restaurant__item {
     filter: brightness(0.7);
@@ -647,9 +656,8 @@ button.command__button {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100vw;
-    padding: 5vw 5vw 5vw 5vw;
+    padding: 5vw;
     height: 700px;
-    position: relative;
   }
   .restaurant__item {
     filter: brightness(0.7);
@@ -670,6 +678,20 @@ button.command__button {
   }
   .restaurant__item:nth-child(even) {
     align-self: flex-end;
+  }
+
+  .order {
+    flex-direction: row;
+    padding: 5vw;
+    width: 100vw;
+  }
+  .order__step {
+    width: 350px;
+  }
+  .order__title {
+    position: absolute;
+    top: 2.5vw;
+    left: 5vw;
   }
 }
 
