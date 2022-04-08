@@ -1,17 +1,17 @@
 // Mobile-first Interface
-
 .presenting{
     @include flex(center, center, column, nowrap);
-    text-align: center;
     font-family: $font-text;
     height: 350px;
     background-color: $color-background;
     margin-bottom: 60px;
+    text-align: center;
     &__title{
         font-weight: bold;
         font-size: 25px;
         position: relative;
         font-family: $font-text;
+        left: 0;
     }
     div{
         height: 60%;
@@ -90,6 +90,7 @@ h2{
 
 // Restaurants
 .restaurant{
+    overflow: hidden;
     font-family: $font-text;
     height: auto;
     background-color: $color-background;
@@ -137,9 +138,7 @@ h2{
         left: 0;
         height: 30%;
         line-height: 20px;
-        display: flex;
-        justify-content: left;
-        align-items: center;
+        @include flex(flex-start, center, row, nowrap);
         padding-left: 10px;
 
         span{
@@ -156,7 +155,7 @@ h2{
 
     .restaurant{
         // Hover effect
-        @include flex(flex-start, center, row, wrap);
+        @include flex(space-around, center, row, wrap);
         width: 100vw;
         height: 800px;
 
@@ -177,7 +176,7 @@ h2{
     .order{
         flex-direction: row;
         &__step{
-            width: 20vw;
+            width: 350px;
 
         }
         &__step__number{
@@ -204,7 +203,6 @@ h2{
         }
     }
 }
-
 
 // Big Desktop interface
 
