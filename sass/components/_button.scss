@@ -2,12 +2,12 @@ button, .presenting__button{
     text-decoration: none;
     transition-duration: 0.2s;
     width: 250px;
-    height: 50px;
+    height: 55px;
     font-size: 18px;
     cursor: pointer;
     outline: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     color: white;
     background: rgb(147,86,220);
     background: linear-gradient(4deg, $color-primary 0%, $color-secondary 100%);
@@ -19,5 +19,5 @@ button, .presenting__button{
 }
 
 .presenting__button{
-    line-height: 50px;
+    line-height: 55px;
 }
