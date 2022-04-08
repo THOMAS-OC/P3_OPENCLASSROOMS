@@ -336,12 +336,14 @@ main {
   padding: 30px;
 }
 main h2 {
+  font-size: 25px;
   padding-left: 0;
   margin-left: 0;
   animation: none;
 }
 main h2::after {
   content: "";
+  margin-top: 10px;
   display: block;
   background-color: #99E2D0;
   height: 3px;
@@ -434,15 +436,15 @@ button.command__button {
 }
 
 @media (min-width: 1200px) {
-  h1 {
-    font-family: Shrikhand;
-    font-size: 25px;
+  .name-restaurant {
+    font-size: 45px;
     position: absolute;
     top: 30px;
     left: 30px;
   }
 
   main {
+    width: 80vw;
     min-height: 300px;
     height: 600px;
     display: flex;
@@ -451,6 +453,9 @@ button.command__button {
     flex-direction: row;
     flex-wrap: no-wrap;
     padding: 0;
+  }
+  main h2 {
+    font-size: 35px;
   }
 
   section.menu {
@@ -648,8 +653,14 @@ button.command__button {
     width: 350px;
     animation-name: zoom;
     animation-duration: 0.5s;
-    animation-delay: 4s;
+    animation-delay: 4.6s;
     animation-fill-mode: both;
+  }
+  .order__step:nth-child(2) {
+    animation-delay: 4s;
+  }
+  .order__step:nth-child(3) {
+    animation-delay: 4.3s;
   }
   .order__title {
     position: absolute;

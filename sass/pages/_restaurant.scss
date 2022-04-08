@@ -30,11 +30,13 @@ main{
     margin: 0 auto;
     padding: 30px;
     h2{
+        font-size: 25px;
         padding-left: 0;
         margin-left: 0;
         animation: none;
         &::after{
             content: "";
+            margin-top: 10px;
             display: block;
             background-color: $color-tertiary;
             height: 3px;
@@ -144,9 +146,8 @@ button.command__button{
 
 @media ( min-width : 1200px ) {
 
-    h1{
-        font-family: $font-logo;
-        font-size: 25px;
+    .name-restaurant{
+        font-size: 45px;
         position: absolute;
         top: 30px;
         left: 30px;
@@ -154,10 +155,14 @@ button.command__button{
 
 
     main{
+        width: 80vw;
         min-height: 300px;
         height: 600px;
         @include flex($justify:space-around, $align:center, $direction:row, $wrap:no-wrap);
         padding: 0;
+        h2{
+            font-size: 35px;
+        }
     }
 
     section.menu{
