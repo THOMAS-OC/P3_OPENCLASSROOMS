@@ -300,17 +300,16 @@ span {
 
 main {
   background-color: #F6F6F6;
-  width: 90vw;
+  width: 100vw;
   height: auto;
   min-height: 1000px;
   transform: translateY(-50px);
-  border-radius: 20px;
+  border-radius: 40px;
   margin: 0 auto;
   padding: 30px;
 }
 main h2 {
   padding-left: 0;
-  font-weight: 200;
   margin-left: 0;
   animation: none;
 }
@@ -319,7 +318,7 @@ main h2::after {
   display: block;
   background-color: #99E2D0;
   height: 3px;
-  width: 100px;
+  width: 60px;
 }
 main .menu {
   margin-top: 30px;
