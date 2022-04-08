@@ -21,11 +21,10 @@ button:hover, .presenting__button:hover {
 
 .coeur_front, .coeur {
   position: absolute;
-  top: 50%;
+  bottom: 12%;
   right: 5%;
   width: 30px;
   height: 30px;
-  transform: translateY(-50%);
   transition-duration: 0.7s;
 }
 
@@ -250,6 +249,7 @@ button:hover, .presenting__button:hover {
 }
 
 .coeur {
+  position: absolute;
   cursor: pointer;
   mask-image: url("../images/heart.svg");
   background-image: url("../images/heart-regular.svg");
@@ -260,6 +260,7 @@ button:hover, .presenting__button:hover {
 }
 
 .coeur_front {
+  position: absolute;
   cursor: pointer;
   mask-image: url("../images/heart.svg");
   background-image: url("../images/heart-regular.svg");
@@ -424,7 +425,7 @@ main .menu__item__dish {
   transform: rotate(1turn);
 }
 
-.coeur, .coeur_front {
+main .coeur, main .coeur_front {
   top: 30px;
   right: 30px;
   transform: none;

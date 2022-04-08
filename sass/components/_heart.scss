@@ -1,5 +1,6 @@
 // CREATION DU COEUR
 .coeur{
+    position: absolute;
     cursor: pointer;
     @extend %position_coeur;
     mask-image: url('../images/heart.svg');
@@ -11,6 +12,7 @@
 }
 
 .coeur_front{
+    position: absolute;
     cursor: pointer;
     @extend %position_coeur;
     mask-image: url('../images/heart.svg'); // le masque affine légèrement le contour de l'image..
