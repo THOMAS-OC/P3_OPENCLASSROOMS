@@ -1,14 +1,11 @@
 // Mobile-first Interface
 
 .presenting{
+    @include flex(space-around, center, column);
     text-align: center;
     font-family: $font-text;
     height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     background-color: $color-background;
-    align-items: center;
     &__title{
         font-weight: bold;
         font-size: 25px;
@@ -29,13 +26,11 @@ h2{
 }
 
 .order{
+    @include flex(space-around, center, column);
     font-family: $font-text;
     height: 300px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+
 
     p{
         font-weight: bold;
@@ -51,14 +46,12 @@ h2{
 
     &__step{
         @extend %shadow_button;
-        display: flex;
-        justify-content: space-between;
+        @include flex(space-between, center, row);
         position: relative;
         height: 70px;
         border-radius: 20px;
         width: 80vw;
         background-color: $color-background;
-        align-items: center;
         &:hover{
             background-color: lighten($color-primary, 30%);
         }
@@ -95,15 +88,11 @@ h2{
     background-color: $color-background;
     width: 100vw;
     height: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(space-around, center, column);
     margin: 0 auto;
 
     &__item{
         height: 250px;
-
         border-radius: 20px;
         width: 350px;
         position: relative;
@@ -160,8 +149,7 @@ h2{
 
     .restaurant{
         // Hover effect
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flex(flex-start, center, row, wrap);
         width: 100vw;
         height: 800px;
 
@@ -214,9 +202,6 @@ h2{
 // Big Desktop interface
 
 @media ( min-width : 1800px ) {
-
-
-
     // Restaurant
     .restaurant{
         // Hover effect
@@ -234,16 +219,12 @@ h2{
                 filter: brightness(1);
             }
         }
-
         &__item:nth-child(odd){
             align-self: flex-start;
         }
-
         &__item:nth-child(even){
             align-self: flex-end;
         }
-
     }
-
 }
 

@@ -327,7 +327,9 @@ main .menu {
   height: 300px;
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   flex-direction: column;
+  flex-wrap: no-wrap;
 }
 main .menu__item {
   overflow: hidden;
@@ -340,7 +342,9 @@ main .menu__item {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   flex-direction: column;
+  flex-wrap: nowrap;
   animation-duration: 0.5s;
   animation-name: animated_dish;
   animation-fill-mode: both;
@@ -418,6 +422,8 @@ button.command__button {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: no-wrap;
     padding: 0;
   }
 
@@ -438,14 +444,15 @@ button.command__button {
   }
 }
 .presenting {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
   text-align: center;
   font-family: Roboto;
   height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   background-color: #F6F6F6;
-  align-items: center;
 }
 .presenting__title {
   font-weight: bold;
@@ -464,13 +471,14 @@ h2 {
 }
 
 .order {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
   font-family: Roboto;
   height: 300px;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 .order p {
   font-weight: bold;
@@ -485,12 +493,14 @@ h2 {
 .order__step {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
   position: relative;
   height: 70px;
   border-radius: 20px;
   width: 80vw;
   background-color: #F6F6F6;
-  align-items: center;
 }
 .order__step:hover {
   background-color: #e4d5f6;
@@ -523,9 +533,10 @@ h2 {
   width: 100vw;
   height: 1200px;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
   margin: 0 auto;
 }
 .restaurant__item {
@@ -573,6 +584,9 @@ h2 {
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .restaurant {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100vw;
