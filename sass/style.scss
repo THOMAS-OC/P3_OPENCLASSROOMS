@@ -3,8 +3,8 @@
 @import "utils/extensions";
 
 // IMPORTATION DES FONDATIONS DU SITE
-@import "base/reset";
 @import "base/typo";
+@import "base/reset";
 @import "base/base";
 
 // IMPORTATION DES BLOCS FIXES
@@ -20,7 +20,3 @@
 // IMPORT DU CSS POUR LA PAGE RESTAURANT
 @import "pages/restaurant";
 @import "pages/home";
-
-body{
-    background-color: white;
-}

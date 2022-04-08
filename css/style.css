@@ -36,6 +36,7 @@ button:hover, .presenting__button:hover {
 * {
   user-select: none;
   box-sizing: border-box;
+  font-family: Roboto;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -55,7 +56,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -90,6 +90,15 @@ table {
 
 a {
   color: black;
+}
+
+.name-restaurant {
+  font-family: Shrikhand;
+  font-size: 25px;
+}
+
+.footer__nav__item--logo li {
+  font-family: Shrikhand;
 }
 
 html {
@@ -148,7 +157,6 @@ address {
   color: whitesmoke;
   margin: 15px 0px 0px 10px;
   font-size: 18px;
-  font-family: Roboto;
   text-decoration: none;
 }
 .footer__nav__item:hover {
@@ -156,10 +164,8 @@ address {
 }
 .footer__nav__item--logo {
   margin-left: 0;
-  font-family: Roboto;
   font-size: 23px;
   text-decoration: none;
-  font-family: Shrikhand;
 }
 .footer__nav__item--logo:hover {
   text-decoration: none;
@@ -282,11 +288,6 @@ button:hover, .presenting__button:hover {
   width: 100vw;
   height: 400px;
   object-fit: cover;
-}
-
-h1 {
-  font-family: Shrikhand;
-  font-size: 25px;
 }
 
 i.fa-solid {
@@ -450,7 +451,6 @@ button.command__button {
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  font-family: Roboto;
   height: 350px;
   background-color: #F6F6F6;
   margin-bottom: 60px;
@@ -460,7 +460,6 @@ button.command__button {
   font-weight: bold;
   font-size: 25px;
   position: relative;
-  font-family: Roboto;
   left: 0;
 }
 .presenting div {
@@ -475,13 +474,18 @@ button.command__button {
 
 .order {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  font-family: Roboto;
-  height: 300px;
+  height: 450px;
   background-color: white;
+  padding: 0px 0 50px 0;
+}
+.order__title {
+  width: 90%;
+  font-weight: bold;
+  font-size: 30px;
 }
 .order p {
   font-weight: bold;
@@ -502,7 +506,7 @@ button.command__button {
   position: relative;
   height: 70px;
   border-radius: 20px;
-  width: 80vw;
+  width: 85%;
   background-color: #F6F6F6;
 }
 .order__step:hover {
@@ -531,7 +535,6 @@ button.command__button {
 
 .restaurant {
   overflow: hidden;
-  font-family: Roboto;
   height: auto;
   background-color: #F6F6F6;
   width: 100vw;
@@ -545,7 +548,6 @@ button.command__button {
   margin: 0 auto;
 }
 .restaurant__title {
-  font-family: Roboto;
   font-weight: bold;
   font-size: 30px;
   width: 90%;
@@ -669,9 +671,6 @@ button.command__button {
   .restaurant__item:nth-child(even) {
     align-self: flex-end;
   }
-}
-body {
-  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

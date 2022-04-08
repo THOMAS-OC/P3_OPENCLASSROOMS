@@ -1,7 +1,6 @@
 // Mobile-first Interface
 .presenting{
     @include flex(center, center, column, nowrap);
-    font-family: $font-text;
     height: 350px;
     background-color: $color-background;
     margin-bottom: 60px;
@@ -10,7 +9,6 @@
         font-weight: bold;
         font-size: 25px;
         position: relative;
-        font-family: $font-text;
         left: 0;
     }
     div{
@@ -23,10 +21,16 @@
 
 // Part order
 .order{
-    @include flex(space-around, center, column);
-    font-family: $font-text;
-    height: 300px;
+    @include flex(space-between, center, column);
+    height: 450px;
     background-color: white;
+    padding : 0px 0 50px 0;
+
+    &__title{
+        width: 90%;
+        font-weight: bold;
+        font-size: 30px;
+    }
 
     p{
         font-weight: bold;
@@ -46,7 +50,7 @@
         position: relative;
         height: 70px;
         border-radius: 20px;
-        width: 80vw;
+        width: 85%;
         background-color: $color-background;
         &:hover{
             background-color: lighten($color-primary, 30%);
@@ -80,7 +84,6 @@
 // Restaurants
 .restaurant{
     overflow: hidden;
-    font-family: $font-text;
     height: auto;
     background-color: $color-background;
     width: 100vw;
@@ -90,7 +93,6 @@
     margin: 0 auto;
 
     &__title{
-        font-family: $font-text;
         font-weight: bold;
         font-size: 30px;
         width: 90%;
@@ -169,7 +171,7 @@
 
 @media ( min-width : 1200px ) {
 
-    // Part order
+    // 
     .order{
         flex-direction: row;
         &__step{

@@ -12,7 +12,6 @@
         color: whitesmoke;
         margin: 15px 0px 0px 10px;
         font-size: 18px;
-        font-family: $font-text;
         text-decoration: none;
         &:hover{
             text-decoration: underline;
@@ -21,10 +20,8 @@
 
     &__nav__item--logo{
         margin-left: 0;
-        font-family: $font-text;
         font-size: 23px;
         text-decoration: none;
-        font-family: $font-logo;
         &:hover{
             text-decoration: none;
             color: $color-primary;

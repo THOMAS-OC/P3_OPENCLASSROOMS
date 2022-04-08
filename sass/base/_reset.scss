@@ -7,6 +7,7 @@
 *{
 	user-select: none;
 	box-sizing: border-box;
+	font-family: $font-text;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -26,7 +27,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -56,4 +56,13 @@ table {
 
 a {
 	color: black;
+}
+
+.name-restaurant{
+    font-family: $font-logo;
+    font-size: 25px;
+}
+
+.footer__nav__item--logo li{
+    font-family: $font-logo;
 }
