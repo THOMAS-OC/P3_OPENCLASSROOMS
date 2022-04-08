@@ -11,3 +11,37 @@
     }
 
 }
+
+
+@keyframes to_top{
+
+    from{
+        transform: translateY(-200%);
+    }
+
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes to_bottom{
+
+    from{
+        transform: translateY(200%);
+    }
+
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes zoom{
+
+    from{
+        transform: scale(0);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}

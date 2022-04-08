@@ -181,6 +181,10 @@
 
         &__step{
             width: 350px;
+            animation-name: zoom;
+            animation-duration: 0.5s;
+            animation-delay: 4s;
+            animation-fill-mode: both;
         }
 
         &__title{
@@ -234,6 +238,8 @@
             transition-duration: 0.2s;
             width: 20vw;
             height: 15vw;
+            animation-fill-mode: both;
+            animation-duration: 1s;
             &:hover{
                 filter: brightness(1);
             }
@@ -247,9 +253,13 @@
 
         &__item:nth-child(odd){
             align-self: flex-start;
+            animation-name: to_top;
+            animation-delay: 6s;
         }
         &__item:nth-child(even){
             align-self: flex-end;
+            animation-name: to_bottom;
+            animation-delay: 6.5s;
         }
     }
 
