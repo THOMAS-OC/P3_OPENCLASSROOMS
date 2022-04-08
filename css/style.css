@@ -473,16 +473,6 @@ button.command__button {
   flex-wrap: nowrap;
 }
 
-h2 {
-  height: 50px;
-  font-family: Roboto;
-  padding-left: 5vw;
-  line-height: 50px;
-  margin: 0 auto;
-  font-weight: bold;
-  font-size: 30px;
-}
-
 .order {
   display: flex;
   justify-content: space-around;
@@ -545,18 +535,25 @@ h2 {
   height: auto;
   background-color: #F6F6F6;
   width: 100vw;
-  height: 1200px;
+  height: 1300px;
+  padding: 50px 0 50px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
   margin: 0 auto;
 }
+.restaurant__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 30px;
+  width: 90%;
+}
 .restaurant__item {
   height: 250px;
   border-radius: 20px;
-  width: 350px;
+  width: 90%;
   position: relative;
   overflow: hidden;
 }
@@ -621,7 +618,9 @@ h2 {
     width: 350px;
   }
   .order__step__number {
-    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 70%);
   }
 
   .restaurant {
@@ -646,8 +645,9 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100vw;
+    padding: 5vw 5vw 5vw 5vw;
     height: 700px;
-    padding: 50px 0px;
+    position: relative;
   }
   .restaurant__item {
     filter: brightness(0.7);
@@ -657,6 +657,11 @@ h2 {
   }
   .restaurant__item:hover {
     filter: brightness(1);
+  }
+  .restaurant__title {
+    position: absolute;
+    top: 2.5vw;
+    left: 5vw;
   }
   .restaurant__item:nth-child(odd) {
     align-self: flex-start;

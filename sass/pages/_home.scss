@@ -22,17 +22,6 @@
 
 
 // Part order
-
-h2{
-    height: 50px;
-    font-family: $font-text;
-    padding-left: 5vw;
-    line-height: 50px;
-    margin: 0 auto;
-    font-weight: bold;
-    font-size: 30px;
-}
-
 .order{
     @include flex(space-around, center, column);
     font-family: $font-text;
@@ -95,14 +84,22 @@ h2{
     height: auto;
     background-color: $color-background;
     width: 100vw;
-    height: 1200px;
-    @include flex(space-around, center, column);
+    height: 1300px;
+    padding : 50px 0 50px 0;
+    @include flex(space-between, center, column);
     margin: 0 auto;
+
+    &__title{
+        font-family: $font-text;
+        font-weight: bold;
+        font-size: 30px;
+        width: 90%;
+    }
 
     &__item{
         height: 250px;
         border-radius: 20px;
-        width: 350px;
+        width: 90%;
         position: relative;
         overflow: hidden;
         @extend %shadow_button;
@@ -180,7 +177,9 @@ h2{
 
         }
         &__step__number{
-            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 70%);
         }
     }
 
@@ -213,8 +212,9 @@ h2{
         flex-direction: row;
         flex-wrap: wrap;
         width: 100vw;
+        padding: 5vw 5vw 5vw 5vw;
         height: 700px;
-        padding: 50px 0px;
+        position: relative;
         &__item{
             filter: brightness(0.7);
             transition-duration: 0.2s;
@@ -224,6 +224,13 @@ h2{
                 filter: brightness(1);
             }
         }
+
+        &__title{
+            position: absolute;
+            top: 2.5vw;
+            left: 5vw;
+        }
+
         &__item:nth-child(odd){
             align-self: flex-start;
         }
