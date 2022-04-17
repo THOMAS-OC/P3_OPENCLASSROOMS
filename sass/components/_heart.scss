@@ -2,7 +2,6 @@
 .coeur{
     position: absolute;
     cursor: pointer;
-    @extend %position_coeur;
     mask-image: url('../images/heart.svg');
     background-image: url('../images/heart-regular.svg');
     background: rgb(147,86,220);
@@ -14,7 +13,6 @@
 .coeur_front{
     position: absolute;
     cursor: pointer;
-    @extend %position_coeur;
     mask-image: url('../images/heart.svg'); // le masque affine légèrement le contour de l'image..
     background-image: url('../images/heart-regular.svg');
     z-index: 5;

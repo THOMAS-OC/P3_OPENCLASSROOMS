@@ -1,20 +1,22 @@
 // Mobile-first Interface
 .presenting{
-    @include flex(center, center, column, nowrap);
+    @include flex(space-around, center, column, nowrap);
     height: 350px;
     background-color: $color-background;
     margin-bottom: 60px;
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
     &__title{
         font-weight: bold;
         font-size: 25px;
         position: relative;
         left: 0;
-    }
-    div{
-        height: 60%;
         width: 80%;
-        @include flex(space-between, center, column);
+    }
+    &__description{
+        width: 80%;
     }
 }
 
@@ -163,6 +165,8 @@
         &__item{
             width: 45vw;
             height: 30vw;
+            font-size: 2vw;
+            line-height: 30px;
         }
 
     }
@@ -185,6 +189,7 @@
             animation-duration: 0.5s;
             animation-delay: 4.6s;
             animation-fill-mode: both;
+            animation-iteration-count: 1;
         }
 
         &__step:nth-child(2){
@@ -240,7 +245,9 @@
         width: 100vw;
         padding: 5vw;
         height: 700px;
-        
+        font-size: 1vw;
+
+
         &__item{
             filter: brightness(0.7);
             transition-duration: 0.2s;
@@ -248,10 +255,12 @@
             height: 15vw;
             animation-fill-mode: both;
             animation-duration: 1s;
+            animation-iteration-count: 1;
             &:hover{
                 filter: brightness(1);
             }
         }
+
 
         &__title{
             position: absolute;
