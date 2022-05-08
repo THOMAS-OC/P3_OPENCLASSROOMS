@@ -213,8 +213,24 @@ button:hover, .presenting__button:hover {
   line-height: 55px;
 }
 
+.coeur_front {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  mask-image: url("../images/heart.svg");
+  background-image: url("../images/heart-regular.svg");
+  z-index: 5;
+}
+.coeur_front:hover .coeur {
+  background: #9356dc;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  opacity: 1;
+}
+
 .coeur {
-  position: absolute;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   mask-image: url("../images/heart.svg");
   background-image: url("../images/heart-regular.svg");
@@ -222,22 +238,8 @@ button:hover, .presenting__button:hover {
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   opacity: 0;
   z-index: 4;
-}
-
-.coeur_front {
   position: absolute;
-  cursor: pointer;
-  mask-image: url("../images/heart.svg");
-  background-image: url("../images/heart-regular.svg");
-  z-index: 5;
-}
-.coeur_front:hover {
-  opacity: 0;
-}
-.coeur_front:hover + .coeur {
-  background: #9356dc;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  opacity: 1;
+  transition-duration: 1s;
 }
 
 @keyframes animated_dish {
@@ -326,6 +328,7 @@ main {
   border-radius: 40px;
   margin: 0 auto;
   padding: 30px;
+  position: relative;
 }
 main .menu {
   margin-top: 30px;
@@ -419,10 +422,10 @@ main .menu__item__dish {
   transform: rotate(1turn);
 }
 
-main .coeur, main .coeur_front {
+.coeur--absolute {
+  position: absolute;
   top: 30px;
   right: 30px;
-  transform: none;
 }
 
 button.command__button {
@@ -610,14 +613,19 @@ button.command__button {
   height: 30%;
   line-height: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding-left: 10px;
+  padding: 0px 20px 0px 20px;
 }
 .restaurant__item__foot span {
   font-weight: bold;
+}
+
+.coeur, .coeur_front {
+  width: 25px;
+  height: 25px;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -734,6 +742,11 @@ button.command__button {
     position: absolute;
     top: 2.5vw;
     left: 5vw;
+  }
+
+  .coeur, .coeur_front {
+    width: 40px;
+    height: 40px;
   }
 }
 

@@ -141,14 +141,19 @@
         left: 0;
         height: 30%;
         line-height: 20px;
-        @include flex(flex-start, center, row, nowrap);
-        padding-left: 10px;
+        @include flex(space-between, center, row, nowrap);
+        padding : 0px 20px 0px 20px;
 
         span{
             font-weight: bold;
         }
     }
 
+}
+
+.coeur, .coeur_front{
+    width: 25px;
+    height: 25px;
 }
 
 // tablette interface
@@ -295,6 +300,11 @@
             top: 2.5vw;
             left: 5vw;
         }
+    }
+
+    .coeur, .coeur_front{
+        width: 40px;
+        height: 40px;
     }
 }
 

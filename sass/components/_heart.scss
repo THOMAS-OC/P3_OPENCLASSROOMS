@@ -1,6 +1,25 @@
 // CREATION DU COEUR
+
+
+.coeur_front{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    mask-image: url('../images/heart.svg'); // le masque affine légèrement le contour de l'image..
+    background-image: url('../images/heart-regular.svg');
+    z-index: 5;
+
+    &:hover .coeur{
+        background: rgb(147,86,220);
+        background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%); 
+        opacity: 1;
+    }
+}
+
 .coeur{
-    position: absolute;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     mask-image: url('../images/heart.svg');
     background-image: url('../images/heart-regular.svg');
@@ -8,20 +27,6 @@
     background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%); 
     opacity: 0;
     z-index: 4;
-}
-
-.coeur_front{
     position: absolute;
-    cursor: pointer;
-    mask-image: url('../images/heart.svg'); // le masque affine légèrement le contour de l'image..
-    background-image: url('../images/heart-regular.svg');
-    z-index: 5;
-    &:hover{
-        opacity: 0;
-    }
-    &:hover + .coeur{
-        background: rgb(147,86,220);
-        background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%); 
-        opacity: 1;
-    }
+    transition-duration: 1s;
 }

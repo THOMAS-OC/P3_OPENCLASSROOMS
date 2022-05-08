@@ -29,6 +29,7 @@ main{
     border-radius: 40px;
     margin: 0 auto;
     padding: 30px;
+    position: relative;
     .menu{
         margin-top: 30px;
         width: 100%;
@@ -128,10 +129,10 @@ main{
 
 // layout heart
 
-main .coeur, main .coeur_front{
+.coeur--absolute{
+    position: absolute;
     top: 30px;
     right: 30px;
-    transform: none;
 }
 
 // Layout button
