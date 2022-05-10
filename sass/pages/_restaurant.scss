@@ -74,10 +74,6 @@ main{
 
         &__item--dish{
             animation-delay: 0.4s;
-            overflow : hidden;
-            white-space : nowrap;
-            text-overflow: ellipsis;
-
         }
 
         &__item--dessert{
@@ -109,7 +105,10 @@ main{
         &__item__dish{
             height: 100%;
             line-height: 20px;
-
+            width: calc(100% - 80px);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 }
@@ -129,7 +128,7 @@ main{
 
 // layout heart
 
-.coeur--absolute{
+div.coeur--absolute{
     position: absolute;
     top: 30px;
     right: 30px;

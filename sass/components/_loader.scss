@@ -8,16 +8,6 @@
     width: 100vw;
     height: 100vh;
     animation: loader 3s linear both;
-    &__img{
-        @extend %center_absolute;
-        width: 40vw;
-        height: 40vw;
-        background-image: url('../images/assiette.png');
-        background-position: center;
-        background-size: contain;
-        animation: loader_circle 3s linear both;
-        filter: drop-shadow(0 0 0.75rem $color-secondary);
-    }
 
     &__circle{
         @extend %center_absolute;

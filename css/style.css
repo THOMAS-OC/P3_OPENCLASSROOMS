@@ -1,4 +1,4 @@
-.loader__circle, .loader__img, .loader {
+.loader__circle, .loader {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -168,15 +168,6 @@ address {
   width: 100vw;
   height: 100vh;
   animation: loader 3s linear both;
-}
-.loader__img {
-  width: 40vw;
-  height: 40vw;
-  background-image: url("../images/assiette.png");
-  background-position: center;
-  background-size: contain;
-  animation: loader_circle 3s linear both;
-  filter: drop-shadow(0 0 0.75rem #FF79DA);
 }
 .loader__circle {
   width: 40vw;
@@ -377,9 +368,6 @@ main .menu__item--entree {
 }
 main .menu__item--dish {
   animation-delay: 0.4s;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 main .menu__item--dessert {
   animation-delay: 0.6s;
@@ -408,6 +396,10 @@ main .menu__item__price {
 main .menu__item__dish {
   height: 100%;
   line-height: 20px;
+  width: calc(100% - 80px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menu__item:hover .menu__item__checked {
@@ -422,7 +414,7 @@ main .menu__item__dish {
   transform: rotate(1turn);
 }
 
-.coeur--absolute {
+div.coeur--absolute {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -626,6 +618,13 @@ button.command__button {
 .coeur, .coeur_front {
   width: 25px;
   height: 25px;
+}
+
+.coeur_front {
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+  transform: translateY(50%);
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {

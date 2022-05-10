@@ -156,6 +156,13 @@
     height: 25px;
 }
 
+.coeur_front{
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    transform: translateY(50%);
+}
+
 // tablette interface
 
 @media ( min-width : 768px ) and (max-width : 1200px) {
@@ -306,5 +313,6 @@
         width: 40px;
         height: 40px;
     }
+
 }
 
