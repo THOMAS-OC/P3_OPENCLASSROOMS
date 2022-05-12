@@ -105,10 +105,12 @@ main{
         &__item__dish{
             height: 100%;
             line-height: 20px;
-            width: calc(100% - 80px);
+            width: calc(100% - 40px);
+
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+
         }
     }
 }
@@ -124,6 +126,10 @@ main{
 
 .menu__item:hover i{
     transform: rotate(1turn);
+}
+
+.menu__item:hover .menu__item__dish{
+    width: calc(100% - 80px);
 }
 
 // layout heart
