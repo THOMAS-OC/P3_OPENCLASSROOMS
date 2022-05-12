@@ -675,7 +675,7 @@ button.command__button {
     flex-wrap: wrap;
     width: 100vw;
     height: 700px;
-    padding: 50px 0px;
+    padding: 50px 50px;
   }
   .restaurant__title {
     position: absolute;
@@ -690,6 +690,9 @@ button.command__button {
   }
   .restaurant__item:hover {
     filter: brightness(1);
+  }
+  .restaurant__item__foot {
+    line-height: 20px;
   }
 }
 @media (min-width: 1800px) {
@@ -727,6 +730,9 @@ button.command__button {
     align-self: flex-end;
     animation-name: to_bottom;
     animation-delay: 6.5s;
+  }
+  .restaurant__item__foot {
+    line-height: 30px;
   }
 
   .order {

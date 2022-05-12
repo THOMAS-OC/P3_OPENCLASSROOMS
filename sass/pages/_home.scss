@@ -226,7 +226,7 @@
         flex-wrap: wrap;
         width: 100vw;
         height: 700px;
-        padding: 50px 0px;
+        padding: 50px 50px;
 
         &__title{
             position: absolute;
@@ -243,6 +243,11 @@
                 filter: brightness(1);
             }
         }
+
+        &__item__foot{
+            line-height: 20px;
+        }
+
     }
 }
 
@@ -289,6 +294,9 @@
             align-self: flex-end;
             animation-name: to_bottom;
             animation-delay: 6.5s;
+        }
+        &__item__foot{
+            line-height: 30px;
         }
     }
 
