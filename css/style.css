@@ -104,16 +104,23 @@ header {
   width: 100vw;
   background-color: white;
   position: relative;
+  text-align: center;
 }
 header .logo {
+  font-family: Shrikhand;
   width: 200px;
+  color: black;
+  text-decoration: none;
+  line-height: 80px;
+  text-align: center;
   height: 100%;
   margin: 0px auto;
-  background: url("../images/logo/ohmyfood.png") center no-repeat;
-  background-size: contain;
+  font-size: 35px;
+  display: block;
+  width: 100%;
   transition-duration: 0.5s;
 }
-header:hover .logo {
+header .logo:hover {
   transform: scale(1.2) rotate(2deg);
 }
 header i {
@@ -619,6 +626,9 @@ button.command__button {
 .restaurant__item__foot span {
   font-weight: bold;
 }
+.restaurant h3 {
+  font-weight: normal;
+}
 
 .coeur, .coeur_front {
   width: 25px;
@@ -659,15 +669,15 @@ button.command__button {
     width: 350px;
     animation-name: zoom;
     animation-duration: 0.5s;
-    animation-delay: 4.6s;
+    animation-delay: 1.6s;
     animation-fill-mode: both;
     animation-iteration-count: 1;
   }
   .order__step:nth-child(2) {
-    animation-delay: 4s;
+    animation-delay: 1s;
   }
   .order__step:nth-child(3) {
-    animation-delay: 4.3s;
+    animation-delay: 1.3s;
   }
   .order__title {
     position: absolute;
@@ -729,12 +739,12 @@ button.command__button {
   .restaurant__item:nth-child(odd) {
     align-self: flex-start;
     animation-name: to_top;
-    animation-delay: 6s;
+    animation-delay: 2s;
   }
   .restaurant__item:nth-child(even) {
     align-self: flex-end;
     animation-name: to_bottom;
-    animation-delay: 6.5s;
+    animation-delay: 2.5s;
   }
   .restaurant__item__foot {
     line-height: 30px;

@@ -143,10 +143,14 @@
         line-height: 20px;
         @include flex(space-between, center, row, nowrap);
         padding : 0px 20px 0px 20px;
-
+        
         span{
             font-weight: bold;
         }
+    }
+
+    h3{
+        font-weight: normal;
     }
 
 }
@@ -199,17 +203,17 @@
             width: 350px;
             animation-name: zoom;
             animation-duration: 0.5s;
-            animation-delay: 4.6s;
+            animation-delay: 1.6s;
             animation-fill-mode: both;
             animation-iteration-count: 1;
         }
 
         &__step:nth-child(2){
-            animation-delay: 4s;
+            animation-delay: 1s;
         }
 
         &__step:nth-child(3){
-            animation-delay: 4.3s;
+            animation-delay: 1.3s;
         }
 
         &__title{
@@ -288,12 +292,12 @@
         &__item:nth-child(odd){
             align-self: flex-start;
             animation-name: to_top;
-            animation-delay: 6s;
+            animation-delay: 2s;
         }
         &__item:nth-child(even){
             align-self: flex-end;
             animation-name: to_bottom;
-            animation-delay: 6.5s;
+            animation-delay: 2.5s;
         }
         &__item__foot{
             line-height: 30px;
