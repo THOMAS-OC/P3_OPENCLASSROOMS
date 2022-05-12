@@ -1,6 +1,13 @@
 // MISE EN PAGE DU FOOTER
 .footer{
+    text-decoration: none;
     background-color: $color-footer;
+
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
     &__nav{
         padding: 30px;
         width: 1200px;

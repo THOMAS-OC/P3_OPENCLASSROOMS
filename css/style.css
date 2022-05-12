@@ -87,7 +87,7 @@ a {
   font-size: 25px;
 }
 
-.footer__nav__item--logo li {
+.footer__nav__item--logo a {
   font-family: Shrikhand;
 }
 
@@ -135,7 +135,12 @@ address {
 }
 
 .footer {
+  text-decoration: none;
   background-color: #353535;
+}
+.footer a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 .footer__nav {
   padding: 30px;
