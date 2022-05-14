@@ -139,6 +139,12 @@ address {
   height: 70px;
   line-height: 70px;
   background-color: #EAEAEA;
+  font-style: normal;
+  font-weight: bold;
+}
+address i {
+  color: black;
+  margin-right: 10px;
 }
 
 .footer {
@@ -172,6 +178,9 @@ address {
 .footer__nav__item--logo:hover {
   text-decoration: none;
   color: #9356DC;
+}
+.footer i {
+  margin-right: 10px;
 }
 
 .loader {
@@ -227,7 +236,7 @@ button:hover, .presenting__button:hover {
 }
 .coeur_front:hover .coeur {
   background: #9356dc;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(205deg, #9356dc 0%, #ff79da 100%);
   opacity: 1;
 }
 
@@ -238,7 +247,7 @@ button:hover, .presenting__button:hover {
   mask-image: url("../images/heart.svg");
   background-image: url("../images/heart-regular.svg");
   background: #9356dc;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(205deg, #9356dc 0%, #ff79da 100%);
   opacity: 0;
   z-index: 4;
   position: absolute;
@@ -311,7 +320,7 @@ button:hover, .presenting__button:hover {
   object-fit: cover;
 }
 
-i.fa-solid {
+i.fa-circle-check {
   color: white;
   transform: rotate(0.5turn);
   transition-duration: 1s;
@@ -341,7 +350,7 @@ main .menu {
   justify-content: space-between;
   align-items: stretch;
   flex-direction: column;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
 }
 main .menu__section {
   font-size: 25px;
@@ -457,7 +466,7 @@ button.command__button {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
     padding: 0;
   }
   main h2 {

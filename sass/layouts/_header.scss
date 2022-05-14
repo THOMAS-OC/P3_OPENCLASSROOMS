@@ -44,6 +44,13 @@ address{
     height: 70px;
     line-height: 70px;
     background-color: $color-location;
+    font-style: normal;
+    font-weight: bold;
+
+    i{
+        color: black;
+        margin-right: 10px;
+    }
 }
 
 // End layout header

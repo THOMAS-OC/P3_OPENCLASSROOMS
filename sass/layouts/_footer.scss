@@ -8,6 +8,8 @@
         text-decoration: none;
     }
 
+
+
     &__nav{
         padding: 30px;
         width: 1200px;
@@ -33,6 +35,10 @@
             text-decoration: none;
             color: $color-primary;
         }
+    }
+
+    i{
+        margin-right: 10px;
     }
 
 }
