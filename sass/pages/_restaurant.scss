@@ -3,7 +3,7 @@
 // picture of restaurant
 .picture_restaurant{
     width: 100vw;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -36,11 +36,12 @@ main{
         height: 300px;
         @include flex($justify:space-between, $align:stretch, $direction:column, $wrap:nowrap);
 
-        &__section{
+        &__title{
             font-size: 25px;
             padding-left: 0;
             margin-left: 0;
             animation: none;
+            font-weight: 300;
             &::after{
                 content: "";
                 margin-top: 10px;
@@ -48,7 +49,6 @@ main{
                 background-color: $color-tertiary;
                 height: 3px;
                 width: 60px;
-                
             }
         }
 
@@ -138,6 +138,7 @@ div.coeur--absolute{
     position: absolute;
     top: 30px;
     right: 30px;
+    transform: none;
 }
 
 // Layout button

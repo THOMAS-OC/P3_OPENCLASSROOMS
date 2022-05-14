@@ -141,9 +141,10 @@ address {
   background-color: #EAEAEA;
   font-style: normal;
   font-weight: bold;
+  color: #353535;
 }
 address i {
-  color: black;
+  color: #353535;
   margin-right: 10px;
 }
 
@@ -316,7 +317,7 @@ button:hover, .presenting__button:hover {
 }
 .picture_restaurant {
   width: 100vw;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -352,13 +353,14 @@ main .menu {
   flex-direction: column;
   flex-wrap: nowrap;
 }
-main .menu__section {
+main .menu__title {
   font-size: 25px;
   padding-left: 0;
   margin-left: 0;
   animation: none;
+  font-weight: 300;
 }
-main .menu__section::after {
+main .menu__title::after {
   content: "";
   margin-top: 10px;
   display: block;
@@ -443,6 +445,7 @@ div.coeur--absolute {
   position: absolute;
   top: 30px;
   right: 30px;
+  transform: none;
 }
 
 button.command__button {

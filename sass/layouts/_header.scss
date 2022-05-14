@@ -46,9 +46,9 @@ address{
     background-color: $color-location;
     font-style: normal;
     font-weight: bold;
-
+    color: $color-footer;
     i{
-        color: black;
+        color: $color-footer;
         margin-right: 10px;
     }
 }
