@@ -236,6 +236,7 @@ button:hover, .presenting__button:hover {
   height: 40px;
   cursor: pointer;
   mask-image: url("../images/heart.svg");
+  -webkit-mask-image: url("../images/heart.svg");
   background-image: url("../images/heart-regular.svg");
   z-index: 5;
 }
@@ -250,6 +251,7 @@ button:hover, .presenting__button:hover {
   height: 40px;
   cursor: pointer;
   mask-image: url("../images/heart.svg");
+  -webkit-mask-image: url("../images/heart.svg");
   background-image: url("../images/heart-regular.svg");
   background: #9356dc;
   background: linear-gradient(205deg, #9356dc 0%, #ff79da 100%);
@@ -311,6 +313,9 @@ button:hover, .presenting__button:hover {
   }
 }
 @keyframes loader {
+  0% {
+    opacity: 1;
+  }
   90% {
     opacity: 1;
   }

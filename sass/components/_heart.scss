@@ -7,6 +7,7 @@
     height: 40px;
     cursor: pointer;
     mask-image: url('../images/heart.svg'); // le masque affine légèrement le contour de l'image..
+    -webkit-mask-image: url('../images/heart.svg');
     background-image: url('../images/heart-regular.svg');
     z-index: 5;
 
@@ -22,6 +23,7 @@
     height: 40px;
     cursor: pointer;
     mask-image: url('../images/heart.svg');
+    -webkit-mask-image: url('../images/heart.svg');
     background-image: url('../images/heart-regular.svg');
     background: rgb(147,86,220);
     background: linear-gradient(205deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%); 
